@@ -7091,6 +7091,7 @@ a.credit {
   border-radius: 50%;
   display: inline-grid;
   border: 8px solid #ffffff4f;
+  color: white;
 }
 
 .item-skill {
