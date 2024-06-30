@@ -159,7 +159,7 @@
                   <div class="card-body">
                     <div class="h4 mt-0 title">About</div>
                     <p>
-                      I’m a full-stack developer with more than 4 years of
+                      I’m a full-stack developer with almost <p id="yoe">4</p> years of
                       experience in software development with .NET Framework and
                       ReactJs.
                     </p>
@@ -180,7 +180,7 @@
                       <div class="col-sm-4">
                         <strong class="text-uppercase">Age:</strong>
                       </div>
-                      <div class="col-sm-8">25</div>
+                      <div class="col-sm-8" id="my-age">25</div>
                     </div>
                     <div class="row mt-3">
                       <div class="col-sm-4">
@@ -1091,5 +1091,16 @@
     <script src="js/now-ui-kit.js?ver=1.1.0"></script>
     <script src="js/aos.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
+    <script>
+      function init(){
+        const thisDate = new Date();
+        const startDate = new Date("08/01/2019")
+        const birthDate = new Date("12/24/1998");
+
+        document.getElementById("yoe").innerHTML = thisDate.getFullYear() - startDate.getFullYear();
+        document.getElementById("my-age").innerHTML = thisDate.getFullYear() - birthDate.getFullYear();
+      }
+      init();
+    </script>
   </body>
 </html>
